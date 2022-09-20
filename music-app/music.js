@@ -7,14 +7,15 @@ class Music {
   }
 
   getName() {
-    return this.title + " - " + this.singer;
+    return this.title ;
   }
 }
 
 const musicList = [
-  new Music("Boşver", "Nilüfer", "1.jpeg", "1.mp3"),
-  new Music("Bu da Geçer mi Sevgilim", "Yalın", "2.jpeg", "2.mp3"),
-  new Music("Aramızda Uçurumlar", "Suat Suna", "3.jpeg", "3.mp3"),
+  new Music("Hope", "Mark Eliyahu", "1.jpg", "1.mp3"),
+  new Music("Say It Right", "Asher", "2.jpg", "2.mp3"),
+  new Music("SummerTime Sadness", "Lana Del Rey", "3.jpg", "3.mp3"),
+  new Music("Lovely", "Billie Ellish", "4.jpg", "4.mp3"),
 ];
 
 // MUSICE AİT title, SINGER, IMG , FILE BİLGİLERİNİ CLASSA TANIMLADIM.

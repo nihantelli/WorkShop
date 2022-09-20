@@ -127,7 +127,7 @@ const displayMusicList = (list) => {
   <li li-index='${i}' onclick="selectedMusic(this)" class="list-group-item d-flex justify-content-between align-items-center">
     <span> ${list[i].getName()}</span>
     <span id="music-${i}"
-     class="badge bg-primary rounded-pill"></span>
+     class="badge rounded-pill"></span>
     <audio class= "music-${i}" src="mp3/${list[i].file}"></audio>
   </li>`;
     ul.insertAdjacentHTML("beforeend", liTag);
