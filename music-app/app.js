@@ -31,7 +31,7 @@ function displayMusic(music) {
   image.src = "img/" + music.img;
   audio.src = "mp3/" + music.file;
 }
-// PLAY TUŞUNA BASILDIĞINDA ÇALIŞIYORSA DURSUN, DURUYORSA ÇALIŞSIN
+
 play.addEventListener("click", () => {
   const isMusicPlay = container.classList.contains("playing");
   isMusicPlay ? pauseMusic() : playMusic();
