@@ -6,6 +6,7 @@ const ui = new UI();
 
 // HTMLDE TANIMLADIĞIM başlangıç BUTTONUNA ULAŞTIM EVENT VE ÇALIŞTIRACAĞI FONKSİYONU TANIMLADIM. E
 ui.btn_start.addEventListener("click", function () {
+  ui.header.classList.add("display");
   ui.btn_next.classList.add("show");
   ui.quiz_box.classList.add("active");
   startTimer(10);
@@ -14,9 +15,6 @@ ui.btn_start.addEventListener("click", function () {
   ui.soruSayisiniGoster(quiz.soruIndex + 1, quiz.sorular.length);
 
   ui.btn_previous.classList.add("display");
-  
-  
-
 });
 // HTMLDE TANIMLADIĞIM SONRAKİ SORU BUTTONUNA ULAŞTIM EVENT VE ÇALIŞTIRACAĞI FONKSİYONU TANIMLADIM. EĞER SON SORUYA GELİNMEMİŞSE SORUGETİR PROTOTYPEI ÇALIŞACAK.
 
@@ -33,7 +31,7 @@ ui.btn_previous.addEventListener("click", function () {
   //  SORULARDA GERİYE GİDERKEN ÇALIŞACAK FONKSİYONLAR
   if (quiz.soruIndex != 0) {
     quiz.soruIndex -= 1;
-    
+
     clearInterval(counter);
     clearInterval(counterLine);
     startTimer(10);
@@ -44,12 +42,9 @@ ui.btn_previous.addEventListener("click", function () {
 
     ui.btn_previous.classList.add("show");
     ui.btn_start.classList.add("display");
-     for (let i = 0; i < ui.option_list.children.length; i++) {
-       ui.option_list.children[i].classList.add("disabled");
-     }
-
-   
-   
+    for (let i = 0; i < ui.option_list.children.length; i++) {
+      ui.option_list.children[i].classList.add("disabled");
+    }
   } else {
     ui.btn_previous.classList.remove("show");
     ui.btn_next.classList.add("show");
@@ -107,7 +102,6 @@ ui.btn_replay.addEventListener("click", function () {
   ui.btn_previous.classList.remove("show");
   ui.score_box.classList.remove("active");
 });
-
 
 // YENİ FONKSİYON YAZDIK, DIŞARDAN SEÇENEK GELDİ. GELEN SEÇENEĞİN İÇİNDEKİ SPAN B ETİKETİNİN İÇİNDEKİ YAZI CEVAP OLARAK TANIMLANDI. QUİZİN İÇİNDEN SORU GETİRİ ÇALIŞTIRACAK SORU NESNESİ TANIMLANDI.
 

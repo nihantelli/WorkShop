@@ -1,6 +1,19 @@
 body {
   background-color: #fdf5ecdc;
 }
+.header {
+  opacity: 1;
+  text-align: center;
+  height: 100vh;
+}
+.header h1 {
+  margin: 40px;
+  font-weight: 400;
+  font-size: 45px;
+}
+.header.display {
+  opacity: 0;
+}
 .quiz_box,
 .score_box {
   position: absolute;
@@ -20,6 +33,14 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.btn_start button {
+  padding: 30px;
+  font-weight: 500;
+}
+.btn_start button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 .btn_start.display {
   opacity: 0;
@@ -129,7 +150,6 @@ body {
   border-radius: 8px;
 }
 
-
 .quiz_box .btn_previous.display {
   display: none;
   opacity: 0;
@@ -203,7 +223,8 @@ body {
 /* .score_box.display {
   display: none;
 } */
-.score_box .buttons .btn_replay, .btn_see , 
+.score_box .buttons .btn_replay,
+.btn_see,
 .btn_quit {
   color: black;
   border: none;
@@ -213,7 +234,8 @@ body {
   margin: 20px;
   border-radius: 8px;
 }
-.btn_see { color: black;
+.btn_see {
+  color: black;
   border: none;
   width: 100px;
   background-color: #ffd33d;
@@ -222,4 +244,3 @@ body {
   border-radius: 8px;
   width: 150px;
 }
-

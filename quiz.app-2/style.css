@@ -1,6 +1,19 @@
 body {
   background-color: #fdf5ecdc;
 }
+.header {
+  opacity: 1;
+  text-align: center;
+  height: 100vh;
+}
+.header h1 {
+  margin: 40px;
+  font-weight: 400;
+  font-size: 45px;
+}
+.header.display {
+  opacity: 0;
+}
 .quiz_box,
 .score_box {
   position: absolute;
@@ -20,6 +33,14 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.btn_start button {
+  padding: 30px;
+  font-weight: 500;
+}
+.btn_start button:hover {
+  cursor: pointer;
+  transform: scale(1.1);
 }
 .btn_start.display {
   opacity: 0;

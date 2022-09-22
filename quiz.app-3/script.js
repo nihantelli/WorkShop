@@ -6,6 +6,7 @@ const ui = new UI();
 
 // HTMLDE TANIMLADIĞIM başlangıç BUTTONUNA ULAŞTIM EVENT VE ÇALIŞTIRACAĞI FONKSİYONU TANIMLADIM. E
 ui.btn_start.addEventListener("click", function () {
+  ui.header.classList.add("display");
   ui.btn_next.classList.add("show");
   ui.quiz_box.classList.add("active");
 

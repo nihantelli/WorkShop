@@ -2,7 +2,6 @@ function UI() {
   (this.btn_start = document.querySelector(".btn_start")),
     (this.btn_next = document.querySelector(".btn_next")),
     (this.btn_previous = document.querySelector(".btn_previous")),
-    
     (this.btn_replay = document.querySelector(".btn_replay")),
     (this.btn_quit = document.querySelector(".btn_quit")),
     (this.btn_finish = document.querySelector("btn_finish")),
@@ -16,7 +15,8 @@ function UI() {
       '<div class="icon"><i class="fas fa-times"></i></div>'),
     (this.time_text = document.querySelector(".time_text")),
     (this.time_second = document.querySelector(".time_second")),
-    (this.time_line = document.querySelector(".time_line"));
+    (this.time_line = document.querySelector(".time_line")),
+    (this.header = document.querySelector(".header"));
 }
 
 // TEKRAR EDECEK PROTOTYPELARI BURAYA GÖNDERDİM.
