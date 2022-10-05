@@ -62,7 +62,9 @@ li.playing {
   color: #fff;
 }
 .btn:hover {
-  color: rgb(234, 232, 232);
+  color: #fff;
+  background-color: #f38d39;
+  transition: all ease 0.3s;
 }
 #volume {
   color: #ee8f41;
@@ -81,7 +83,4 @@ li.playing {
 }
 input {
   width: 100%;
-}
-.slider {
-  color: red;
 }
